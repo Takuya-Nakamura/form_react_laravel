@@ -1,0 +1,435 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// slick
+@import "slick-carousel/slick/slick";
+@import "slick-carousel/slick/slick-theme";
+
+//component
+@import url('reset.css'); 
+
+/* * {
+  color: #3d3d3d;
+} */
+
+* {
+  font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  line-height: 1.2rem;
+}
+
+
+.header{
+  width: 100%;
+  height: 60px;
+  background-color: #069EFF;
+  /* text-align: center; */
+}
+
+.header-logo-image{
+  width: 100px;
+  height: 55px;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+.modal_wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 10;
+
+}
+
+main{
+  display: block;
+}
+
+.main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px 10px 10px;
+
+
+
+  .target-notice{
+    color:#aaa;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+  }
+
+  .product-description {
+    // border:1px solid ;
+    // height: 300px;
+    // background-color: #dfdfdf;
+    margin-bottom: 50px;
+  }
+
+}
+
+.title {
+
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  margin-bottom: 50px;
+
+}
+.title h1{
+  color: #069EFF;  
+}
+
+.key-image {
+  margin-bottom: 40px;
+}
+
+.key-image img{
+  width: 100%;
+}
+.key-image video{
+  width: 100%;
+}
+
+.description {
+  margin-bottom: 30px;
+  line-height: 1.4rem;
+  // font-size: 0.8rem;
+  // font-weight: bold;
+}
+
+.form {
+  border:1px solid #dfdfdf;
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+.form .btn:disabled {
+  background-color: gray;
+  border: none;
+  color: white;
+}
+
+.form .form-item {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 10px;
+}
+.form .form-radio-wrap {
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+.form input[type='radio'] {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.form .form-radio {
+  margin-bottom: 15px;
+}
+
+.form .form-label {
+  display: block;
+  margin-bottom: 15px;
+  color: #069EFF;
+  
+}
+.form .question {
+  margin-bottom: 10px;
+}
+
+.form .form-input {
+  padding: 10px 2.5%;
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 0 auto 10px;
+}
+
+.form .hidden {
+  display: none;
+}
+
+.form .form-select {
+  padding: 10px 10px 10px 5px ;
+
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+
+.form .require {
+  color: red;
+  font-size: 0.7rem;
+}
+
+.btn {
+  background-color: white;
+  border: solid 1px #069EFF;
+  color: #069EFF;
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px 10px;
+  transition: 0.3s;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #069EFF;
+  color: white;
+}
+
+
+.form .policy-wrapper{
+  text-align: center;
+}
+
+.form .policy-wrapper .checkbox{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left:-1.5rem;
+}
+
+ /* note */
+ .description-note{
+  font-size: 0.8rem;
+  margin-top:15px;
+  margin-bottom: 15px;
+}
+.submit-note{
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top:15px;
+  
+}
+.policy-note{
+  font-size: 0.8rem;
+  margin-top:15px;
+  text-align: left;
+}
+
+/* footer */
+
+footer{
+  max-width: 600px;
+  margin: 0 auto 30px;
+  height:55px;
+}
+.footer-info{
+  float: left;
+  padding-top: 10px;
+}
+.footer-info .company{
+  font-size:12px;
+}
+.footer-info .sub-text{
+  font-size:8px;
+}
+
+.footer-logo{
+  float:right;
+}
+.footer-logo img{
+    width: 100px;
+
+}
+
+/* **************** */
+/* answer page*/
+/* **************** */
+/* answers */
+.answer-area{
+  border-top:1px solid #dfdfdf;
+  border-bottom:1px solid #dfdfdf;
+  
+  padding: 10px;
+  margin:20px 0;
+  display: flex;
+}
+.answer-area .answers{
+  flex:5;
+  padding-top:30px
+}
+.answer-area .answer{
+  font-weight: bold;
+  line-height: 1.1rem;
+  
+}
+
+.answer+.answer{
+  margin-top:35px;
+}
+
+.answer-area .answer .q{
+  color: #069EFF;
+  font-size: 0.8rem;
+}
+
+.answer-area .answer .a{
+  font-size: 1.1rem;
+}
+
+.side-image{
+  flex:4;
+}
+.side-image img{
+  width: 100%;
+}
+.inquiry-area{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+
+
+/* modal */
+.content{
+  margin: 0 auto;
+  
+}
+.modal{
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.modal__bg{
+  background: rgba(0,0,0,0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content{
+  background: #fff;
+  left: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+}
+
+
+.keyword-area{
+  margin:20px 0;
+  padding:15px;
+  /* border: 1px black solid; */
+}
+.keyword-area p{
+  text-align: center;
+}
+
+.keyword-description{
+  font-size: 1rem;  
+  margin-bottom: 10px;
+  color: #069EFF;
+}
+
+.keyword{
+  font-size: 1.5rem;
+  color: red;
+}
+
+
+// modal
+#vid{
+  width: 100%;
+}
+
+
+// keyVisual
+.key-visual__area{
+  margin-bottom: 30px;
+}
+.key-visual{
+  // margin: 0 calc(50% - 49.5vw) ;
+  // width: 99vw;
+}
+
+.key-visual-item{
+  display: inline-block;
+  width: 33.3%;
+}
+
+.key-visual-title{
+  background-color: #069EFF;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+.key-visual-item img{
+  width:100%;
+  // height: 400px;
+  // object-fit: cover
+}
+
+.slideshow {
+  
+  .slideshow img{
+    width: 30%;
+  }
+}
+
+
+// closebutton
+/* ここから下がボタンのCSS　*/
+.close-btn {
+  
+  display: block;
+  margin: 10px auto;
+  width: 100px;
+  text-align: center;  color:white;
+
+  font-size: 16px;
+  background-color: #069EFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .4s;
+  border: 1px solid #069EFF;
+}
+
+.close-btn:hover {
+  background-color: white;
+  color: #069EFF;
+  border: 1px solid #069EFF;
+}
+
+
+/** .alert-dialog **/
+
+.error-dialog {
+  min-width: 300px;
+  padding:20px;
+
+  .messages{
+    margin-bottom: 20px;
+  }
+}
+
+
+/*product image*/
+
+.product-description{
+  .product_image{
+    width: 100%;
+  }
+}
